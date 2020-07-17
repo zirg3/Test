@@ -1,0 +1,136 @@
+* {
+    font-size: 30px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    height: 1000px;
+    align-items: flex-end;
+}
+
+.flex-grid__items {
+    max-width: calc((100% - 24px * 4)/4);
+    flex-basis: 250px;
+    height: 250px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 12px 20px 12px;
+    flex-grow: 1;
+}
+.flex-grid__items:nth-child(1) {
+    align-self: center;
+}
+
+
+
+.inline-grid {
+    text-align: start;
+}
+
+.inline-grid__items {
+    width: calc((100% - 30px * 4)/4);
+    height: 250px;
+    background-color: cadetblue;
+    margin: 20px 12px 20px 12px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+
+
+.float-grid__items {
+    width: calc((100% - 24px * 4) / 4);
+    height: 250px;
+    background-color: lemonchiffon;
+    margin-top: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    float: left;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+
+.table {
+    margin-top: 50px;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+
+.table th,
+.table td {
+    background-color: cornflowerblue;
+    border: 2px solid red;
+
+}
+
+p,
+h1 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+.table-div {
+    margin-top: 50px;
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-div__tr {
+    display: table-row;
+}
+
+.table-div__td {
+    display: table-cell;
+    border: 2px solid cornflowerblue;
+}
+
+
+
+
+.accordion {
+    margin-top: 50px;
+}
+
+.accordion__item {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.accordion__item h1 {
+    background-color: teal;
+    border-radius: 15px;
+    border: 2px solid gold;
+    box-shadow: 0 0 12px 4px;
+    cursor: pointer;
+    transition: ease 1s;
+}
+
+.accordion__item h1:hover {
+    background-color: gold;
+    transition: ease 1s;
+}
+
+.accordion__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+.active {
+    transition: max-height 1s;
+}

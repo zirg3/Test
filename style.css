@@ -28,6 +28,8 @@
     align-items: center;
     margin: 20px 12px 20px 12px;
     flex-grow: 1;
+    padding: 10px;
+    word-break: break-word;
 }
 .flex-grid__items:nth-child(1) {
     align-self: center;
@@ -47,7 +49,8 @@
     margin: 20px 12px 20px 12px;
     display: inline-block;
     text-align: center;
-    padding: 20px 0 0 0;
+    padding: 10px;
+    word-break: break-word;
 }
 
 
@@ -62,7 +65,8 @@
     margin-right: 12px;
     float: left;
     text-align: center;
-    padding: 20px 0 0 0;
+    padding: 10px;
+    word-break: break-word;
 }
 
 

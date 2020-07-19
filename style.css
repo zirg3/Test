@@ -19,6 +19,7 @@
 
 .flex-grid__items {
     max-width: calc((100% - 24px * 4)/4);
+    min-width: 150px;
     flex-basis: 250px;
     height: 250px;
     background-color: bisque;
@@ -40,6 +41,7 @@
 
 .inline-grid__items {
     width: calc((100% - 30px * 4)/4);
+    min-width: 150px;
     height: 250px;
     background-color: cadetblue;
     margin: 20px 12px 20px 12px;
@@ -52,6 +54,7 @@
 
 .float-grid__items {
     width: calc((100% - 24px * 4) / 4);
+    min-width: 150px;
     height: 250px;
     background-color: lemonchiffon;
     margin-top: 24px;
